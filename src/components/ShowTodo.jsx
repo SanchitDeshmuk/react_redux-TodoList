@@ -1,6 +1,7 @@
 import React from 'react'
 import {useDispatch,useSelector} from 'react-redux'
 import { removeTodo } from '../features/todo/todoSlice'
+import style from './showTodoStyle.module.css'
 
 function ShowTodo() {
 
@@ -8,10 +9,10 @@ function ShowTodo() {
     const dispatch = useDispatch()
 
   return (
-    <div>
+    <div className={`${style.container}`}>
         {todos.map((todo)=>(
             <h3 key={todo.id}>{todo.text}
-            <button onClick={()=>dispatch(removeTodo(todo.id))}>X</button>
+            <button onClick={()=>dispatch(removeTodo(todo.id))}>Remove</button>
             </h3>
         ))}
     </div>

@@ -1,0 +1,30 @@
+.container{
+    margin: 5vmin 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmin;
+}
+
+.inputDesign{
+    height: 8vmin;
+    width: 70vmin;
+    font-size: 4vmin;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.buttonStyle{
+    height: 8vmin;
+    width: 15vmin;
+    font-size: 2vmin;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-weight: 900;
+    background-color: rgb(175, 170, 170);
+}
+
+.buttonStyle:hover{
+    background-color: black;
+    color: white;
+}

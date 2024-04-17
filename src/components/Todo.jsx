@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {useDispatch} from 'react-redux'
 import { addTodo } from '../features/todo/todoSlice'
+import style from './todoStyle.module.css'
 
 function Todo() {
 
@@ -14,9 +15,9 @@ function Todo() {
     }
 
   return (
-    <div>
-       <input type="text" onChange={(e)=>{setInput(e.target.value)}} />
-       <button onClick={addTodoHandler}>Submit</button>
+    <div className={`${style.container}`}>
+       <input type="text" onChange={(e)=>{setInput(e.target.value)}} className={`${style.inputDesign}`}/>
+       <button onClick={addTodoHandler} className={`${style.buttonStyle}`}>Add Todo</button>
     </div>
   )
 }

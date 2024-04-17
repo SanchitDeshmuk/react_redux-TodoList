@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Learning redux toolkit</h1>
+      <h1>Todo List</h1>
       <Todo/>
       <ShowTodo/>
     </>
